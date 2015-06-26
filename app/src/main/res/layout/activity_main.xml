@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#53933f"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="ADD DIET CHART"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <Spinner
+        android:background="@drawable/pic3"
+        android:popupBackground="#70c656"
+        android:id="@+id/spinner1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:entries="@array/Diet_Plan"
+        android:prompt="@string/Diet_plan"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        style="@style/MySpinnerLook"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/txtDate"
+            android:textColor="#70c656">
+            <requestFocus></requestFocus>
+        </EditText>
+        <Button
+            android:layout_marginRight="5dp"
+            android:layout_height="40dp"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:background="@drawable/btn_design"
+            android:id="@+id/btnCalendar"
+            android:text="Date"
+            android:layout_width="100dp">
+
+            </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/txtTime"
+            android:textColor="#70c656">
+            <requestFocus></requestFocus>
+        </EditText>
+        <Button
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="40dp"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:id="@+id/btnTimePicker"
+            android:text="Time"
+            android:background="@drawable/btn_design"
+            android:layout_width="100dp">
+
+            </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Day Name"
+            android:layout_marginTop="20dp"
+            android:textColor="#70c656"
+            android:textSize="20sp"/>
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/editday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:inputType="text"
+        android:textColor="#70c656"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp "
+            android:layout_height="wrap_content"
+            android:text="Input Food"
+            android:layout_marginTop="20dp"
+            android:textColor="#70c656"
+            android:textSize="20sp"/>
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/editDietPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:inputType="text"
+        android:textColor="#70c656"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/add_save_btn"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_design"
+            android:text="Add Chart"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/add_view_all"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_design"
+            android:text="View All"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/update_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_design"
+            android:text="Save Updates"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/update_view_all"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_design"
+            android:text="View All"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>
